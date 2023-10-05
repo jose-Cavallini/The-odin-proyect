@@ -1,0 +1,101 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.block-Game{
+    display: flex;
+    flex: 1;
+
+}
+.Pantalla{
+    width: 20em;
+    min-height: 14em;
+    padding: 1em;
+    background-color: antiquewhite;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Pantalla .resultado{
+    background-color: rgb(121, 116, 116);
+    width: 16em;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    min-height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultado #result{
+    font-size: 45px;
+    color: yellow;
+    font-family:cursive ;
+}
+ p{
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+.Pantalla button{
+    height: 2.5em;
+    width: 150px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1em;
+    font-size:large;
+    transition: .2s;
+    justify-content: center;
+}
+.Pantalla .registros{
+    gap: 1em;
+    max-height: 40px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.selectors{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: rgb(220, 122, 73);
+    padding: 1em;
+    border-radius: 10px;
+}
+.selectors button{
+    padding: .7rem;
+    margin: 10px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.7em;
+
+
+
+}
+
+button:hover{
+    transition: .2s;
+    transform: scale(1.05);
+
+    background-color: rgb(236, 236, 236);
+    border-radius: .9em;    
+    box-shadow: 1px 2px rgba(50, 50, 50, 0.1);
+
+}
