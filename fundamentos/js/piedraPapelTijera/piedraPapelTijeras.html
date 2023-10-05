@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piedra Papel Tijera</title>
-    <script src="piedraPapelTijeras.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="piedraPapelTijeras.js" defer></script>
 </head>
 <body>
+    <div class="block-Game">
+        <div class="selectors">
+            <button id="Piedra-Player" type="button">Piedra</button>
+            <button id="Papel-Player" type="button">Papel</button>
+            <button id="Tijera-Player" type="button">Tijera</button>
+        </div>
+    
+        <div class="Pantalla">
+            <div class="resultado"><p id ="result"></p></div>
+            <div class="registros">
+                <div class="cont"><p id="countPlayer">Player: </p></div>
+                <p>Vs</p>
+                <div class="cont"><p id="countCPU">CPU: </p></div>
+            </div>
+            <div>
+                <button id="playGame" type="button">Play Game</button>
+            </div>
+    
+        </div>
+    
+        <div class="selectors">
+            <button id="Piedra-CPU" type="button">Piedra</button>
+            <button id="Papel-CPU" type="button">Papel</button>
+            <button id="Tijera-CPU" type="button">Tijera</button>
+        </div>
+    </div>
+
     
 </body>
 </html>
