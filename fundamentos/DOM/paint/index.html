@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Etch-a-Sketch</h1>
+        </header>
+        <main class="mainPaint">
+            <div class="tools">
+                
+                <input type="color" name="paleta-color" id="paleta" value="#333333" colorpick-eyedropper-active="true">
+                <div class="btn">
+                    <button id="selec-color">selec color</button>
+                    <button id="random-color">Modo arcoiris</button>
+                    <button id="default-color">borrador</button>
+                    <button id="clear-grid">limpiar pizzara</button>
+                    <div id="sizeValue" class="size-value">
+                        <span id="text-value-range">n X n</span>
+                        <input id="sizeSlider" type="range" value="16" min="1" max="80">
+                    </div>
+                </div>
+            </div>
+            <div id="paint"></div>
+        </main>
+    </body>
+</html>
