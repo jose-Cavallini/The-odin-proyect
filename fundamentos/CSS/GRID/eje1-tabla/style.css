@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(239, 207, 178);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* ejercicio1 */
+
+.contenedor{
+    background-color: rgb(208, 202, 202);
+    display: grid;
+    border-radius: 5px;
+    
+    grid-template-columns: repeat(3 , minmax(80px , 1fr) );
+    grid-template-rows: repeat(3 ,minmax(30px, 1fr));
+    gap: 5px ;
+    width: 60%;
+    height: 350px;
+    padding: 2px;
+    margin: 20px;
+}
+.contenedor div {
+    background-color:darkgray;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* ejercicio2 
+    trabajamos con 2 clases 
+*/
+.contenedor.tabla2{
+    background-color: rgb(67, 27, 27);
+    width: 80% ;
+    padding: 15px 5px;
+}
+
+.contenedor.tabla2 div {
+    background-color:rgba(172, 36, 36, .8);
+    border-radius: 10px;
+    overflow: auto;
+    color: aliceblue;
+    padding: 7px;
+}
+
+/*      ejercicio3 
+    Agregamos ana clase de cabezera 
+    para inicar las columnas que ocupara
+*/
+
+.cabecera{
+    font-size: 18px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    grid-column: 1/4;
+}
+.contenedor.tabla3{
+    grid-template-rows: 100px repeat(3, 2fr);
+}
+
+/* ejercicio 4 */
+
+.tabla4{
+    background-color: rgb(221, 255, 0);
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-areas: 
+    'cabecera4 cabecera4 cabecera4'
+    'aside main1 main2'
+    'aside footer1 footer2';
+    width: 60%;
+    height: 300px;
+    gap: 8px;
+    padding: 7px;
+}
+.item{
+    border: 2px solid floralwhite;
+    background-color: rgb(255, 234, 0);
+
+}
+.cabecera4{
+    grid-area: cabecera4;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.main-1{
+    grid-area: main1;
+}
+
+.main2{
+    grid-area: main2;
+}
+
+.footer1{
+    grid-area: footer1;
+}
+
+.footer2{
+    grid-area: footer2;
+}
+
+/* EJERCICIO 5  */
+
+.tabla5{
+    background-color: rgb(221, 255, 0);
+    display: grid;  
+    grid-template-rows: 2fr 1fr 1fr;  
+    grid-gap: 8px;
+    grid-auto-flow: column dense;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.tabla5 div{
+    background-color: chartreuse;
+}
+
+.medidas{
+    grid-row: 1/ span 2;/*sap 2 significa que ocupara 2 columnas o filas*/
+}

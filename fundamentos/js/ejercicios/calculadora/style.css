@@ -1,0 +1,108 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(imagenes/IDH-calculadora-1-1024x574.webp) no-repeat center center/ cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-cal{
+    background-image: linear-gradient(-180deg,#080808 , #3a373a);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 1em;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 0px;
+    overflow: auto;
+
+}
+
+.pantalla{
+    display: flex;
+    width: 85%;
+    height: 40px;
+    color: white;
+    background-color: #302d30;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 9px;
+    align-items: center;
+    justify-content: end;
+    padding-right: 7px;
+    font-size:x-large;
+}
+.pantalla:hover{
+    background-color: #565556;
+    border: 1px solid rgb(148, 148, 148);
+
+}
+
+.botones{
+    width: 85%;
+    background-color: #763d76;
+    border-radius: 9px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-areas: 
+    'factorial suma delete  delete'
+    'seven  eight nine    resta'
+    'four   five  six     multiplicacion'
+    'one    two   three   divicion'
+    'cero    coma  submit  potencia'
+    ;
+}
+
+button{
+    background-color: #984f98;
+    padding: 5px 0px;
+    border: 1px solid #984f98;
+    border-radius: .75em;
+}
+button:hover{
+    border: 1px solid #e071e0;
+    background-color: #aa59aa;
+}
+
+#one{grid-area: one;}
+#two{grid-area: two;}
+#three{grid-area: three;}
+#four{grid-area: four;}
+#five{grid-area: five;}
+#six{grid-area: six;}
+#seven{grid-area: seven;}
+#eight{grid-area: eight;}
+#nine{grid-area: nine;}
+#cero{grid-area: cero;}
+#submit{
+    grid-area: submit;
+    background-color: rgb(217, 227, 228);
+    border: 1px solid rgb(217, 227, 228);
+    
+}
+#submit:hover{
+    background-color:rgb(231, 242, 243) ;
+    border: 1px solid rgb(255, 255, 255);
+}
+#operador-suma{grid-area: suma;}
+#operador-resta{grid-area: resta;}
+#operador-multiplicacion{grid-area: multiplicacion;}
+#operador-divicion{grid-area: divicion;}
+#operador-potencia{grid-area: potencia;}
+#operador-factorial{grid-area: factorial;}
+#delete{grid-area: delete;}
+#coma{grid-area: coma;}
+
+.backgraund-op{background-color:#873f87 ;}
+.backgraund-op:hover{background-color:#a94da9 ;}
+
+
+/* display */

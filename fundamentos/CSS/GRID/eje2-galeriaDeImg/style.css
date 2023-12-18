@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 100%;
+    align-items: center;
+    margin-top: 7px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+.content-img{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(200px, 1fr)
+    );
+    width: 80%;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.nav-home{
+    background-color: rgb(235, 235, 235);
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.box-derecha{
+    display: flex;
+    gap: 10px;
+    padding: 1em;
+}
+.inicio{
+    padding: 1em;
+    cursor: pointer;
+}

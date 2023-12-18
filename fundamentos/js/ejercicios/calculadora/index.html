@@ -1,0 +1,45 @@
+<!-- El objetivo de este ejercicio es crear una calculadora que haga lo siguiente:
+
+
+sumar, restar, obtener la divicion, multiplicar, obtener la potencia y encontrar el factorial
+
+Para hacer esto, complete cada función con su solución. ¡Asegúrate de devolver el valor para poder probarlo en Jest! Para ver el valor esperado, consulte el archivo de especificaciones que alberga los casos de prueba de Jest. -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="box-cal">
+        <div class="pantalla">
+            <div id="resultado">0</div>
+        </div>
+        <div class="botones">
+            <button value="1" id="one">1</button>     
+            <button value="2" id="two">2</button>     
+            <button value="3" id="three">3</button>     
+            <button value="4" id="four">4</button>     
+            <button value="5" id="five">5</button>
+            <button value="6" id="six">6</button>     
+            <button value="7" id="seven">7</button>     
+            <button value="8" id="eight">8</button>     
+            <button value="9" id="nine">9</button>     
+            <button value="0" id="cero">0</button>
+            <button value="." id="coma">.</button>
+            <button value="igual" id="submit">=</button>
+            <button value="delete" class="backgraund-op" id="delete">AC</button>
+            <button value="+" class="backgraund-op" id="operador-suma">+</button>
+            <button value="-" class="backgraund-op" id="operador-resta">-</button>
+            <button value="x" class="backgraund-op" id="operador-multiplicacion">X</button>
+            <button value="/" class="backgraund-op" id="operador-divicion">/</button>
+            <button value="^" class="backgraund-op" id="operador-potencia">^</button>
+            <button value="!" class="backgraund-op" id="operador-factorial">!</button>
+        </div>
+    </div>
+</body>
+</html>
